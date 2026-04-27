@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alle Hauptstädte Europas</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow: visible;
+}
+
+/* Karten-System mit Überlappung */
+.city {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    position: relative;
+    z-index: 1;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.city:hover {
+    transform: scale(1.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.flag {
+    width: 100%;
+    border-radius: 6px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.country {
+    font-weight: bold;
+}
+
+/* Ausklapptext ohne Layoutverschiebung */
+.more-text {
+    display: inline-block;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+.city:hover .more-text {
+    opacity: 1;
+    max-height: 200px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Alle Hauptstädte Europas</h1>
+</header>
+
+<div class="container">
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/al.png"><h2>Tirana</h2><p class="country">Albanien</p><p>Tirana ist die Hauptstadt Albaniens.<span class="more-text"> Zentrum von Politik und Kultur.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ad.png"><h2>Andorra la Vella</h2><p class="country">Andorra</p><p>Andorra la Vella ist die Hauptstadt Andorras.<span class="more-text"> Liegt in den Pyrenäen.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/at.png"><h2>Wien</h2><p class="country">Österreich</p><p>Wien ist die Hauptstadt Österreichs.<span class="more-text"> Bekannt für Musik und Kultur.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/be.png"><h2>Brüssel</h2><p class="country">Belgien</p><p>Brüssel ist die Hauptstadt Belgiens.<span class="more-text"> Sitz der EU.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ba.png"><h2>Sarajevo</h2><p class="country">Bosnien und Herzegowina</p><p>Sarajevo ist die Hauptstadt Bosniens.<span class="more-text"> Historisch sehr bedeutend.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/bg.png"><h2>Sofia</h2><p class="country">Bulgarien</p><p>Sofia ist die Hauptstadt Bulgariens.<span class="more-text"> Eine der ältesten Städte Europas.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/hr.png"><h2>Zagreb</h2><p class="country">Kroatien</p><p>Zagreb ist die Hauptstadt Kroatiens.<span class="more-text"> Mischung aus Alt und Modern.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/cz.png"><h2>Prag</h2><p class="country">Tschechien</p><p>Prag ist die Hauptstadt Tschechiens.<span class="more-text"> Berühmt für die Karlsbrücke.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/dk.png"><h2>Kopenhagen</h2><p class="country">Dänemark</p><p>Kopenhagen ist die Hauptstadt Dänemarks.<span class="more-text"> Design- und Fahrradstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ee.png"><h2>Tallinn</h2><p class="country">Estland</p><p>Tallinn ist die Hauptstadt Estlands.<span class="more-text"> Mittelalterliche Altstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/fi.png"><h2>Helsinki</h2><p class="country">Finnland</p><p>Helsinki ist die Hauptstadt Finnlands.<span class="more-text"> Direkt an der Ostsee.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/fr.png"><h2>Paris</h2><p class="country">Frankreich</p><p>Paris ist die Hauptstadt Frankreichs.<span class="more-text"> Eiffelturm und Modewelt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/de.png"><h2>Berlin</h2><p class="country">Deutschland</p><p>Berlin ist die Hauptstadt Deutschlands.<span class="more-text"> Geschichte und Politik.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/gr.png"><h2>Athen</h2><p class="country">Griechenland</p><p>Athen ist die Hauptstadt Griechenlands.<span class="more-text"> Wiege der Demokratie.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/hu.png"><h2>Budapest</h2><p class="country">Ungarn</p><p>Budapest ist die Hauptstadt Ungarns.<span class="more-text"> Donau und Thermalbäder.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/is.png"><h2>Reykjavík</h2><p class="country">Island</p><p>Reykjavík ist die Hauptstadt Islands.<span class="more-text"> Nördlichste Hauptstadt Europas.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ie.png"><h2>Dublin</h2><p class="country">Irland</p><p>Dublin ist die Hauptstadt Irlands.<span class="more-text"> Literatur und Pubs.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/it.png"><h2>Rom</h2><p class="country">Italien</p><p>Rom ist die Hauptstadt Italiens.<span class="more-text"> Kolosseum und Antike.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/xk.png"><h2>Pristina</h2><p class="country">Kosovo</p><p>Pristina ist die Hauptstadt Kosovos.<span class="more-text"> Jüngste Hauptstadt Europas.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/lv.png"><h2>Riga</h2><p class="country">Lettland</p><p>Riga ist die Hauptstadt Lettlands.<span class="more-text"> Jugendstil-Architektur.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/lt.png"><h2>Vilnius</h2><p class="country">Litauen</p><p>Vilnius ist die Hauptstadt Litauens.<span class="more-text"> UNESCO-Altstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/lu.png"><h2>Luxemburg</h2><p class="country">Luxemburg</p><p>Luxemburg ist die Hauptstadt Luxemburgs.<span class="more-text"> Banken- und EU-Zentrum.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/mt.png"><h2>Valletta</h2><p class="country">Malta</p><p>Valletta ist die Hauptstadt Maltas.<span class="more-text"> Kleine Festungsstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/md.png"><h2>Chișinău</h2><p class="country">Moldau</p><p>Chișinău ist die Hauptstadt Moldaus.<span class="more-text"> Politisches Zentrum.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/mc.png"><h2>Monaco</h2><p class="country">Monaco</p><p>Monaco ist die Hauptstadt Monacos.<span class="more-text"> Luxus und Formel 1.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/me.png"><h2>Podgorica</h2><p class="country">Montenegro</p><p>Podgorica ist die Hauptstadt Montenegros.<span class="more-text"> Wirtschaftszentrum.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/nl.png"><h2>Amsterdam</h2><p class="country">Niederlande</p><p>Amsterdam ist die Hauptstadt der Niederlande.<span class="more-text"> Grachten und Fahrräder.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/mk.png"><h2>Skopje</h2><p class="country">Nordmazedonien</p><p>Skopje ist die Hauptstadt Nordmazedoniens.<span class="more-text"> Am Fluss Vardar.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/no.png"><h2>Oslo</h2><p class="country">Norwegen</p><p>Oslo ist die Hauptstadt Norwegens.<span class="more-text"> Natur und Fjorde.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/pl.png"><h2>Warschau</h2><p class="country">Polen</p><p>Warschau ist die Hauptstadt Polens.<span class="more-text"> Wiederaufgebaut nach dem Krieg.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/pt.png"><h2>Lissabon</h2><p class="country">Portugal</p><p>Lissabon ist die Hauptstadt Portugals.<span class="more-text"> Atlantikküste und Hügel.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ro.png"><h2>Bukarest</h2><p class="country">Rumänien</p><p>Bukarest ist die Hauptstadt Rumäniens.<span class="more-text"> „Paris des Ostens“.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/se.png"><h2>Stockholm</h2><p class="country">Schweden</p><p>Stockholm ist die Hauptstadt Schwedens.<span class="more-text"> Inselstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ch.png"><h2>Bern</h2><p class="country">Schweiz</p><p>Bern ist die Hauptstadt der Schweiz.<span class="more-text"> Mittelalterliche Altstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/rs.png"><h2>Belgrad</h2><p class="country">Serbien</p><p>Belgrad ist die Hauptstadt Serbiens.<span class="more-text"> Donau und Save.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/sk.png"><h2>Bratislava</h2><p class="country">Slowakei</p><p>Bratislava ist die Hauptstadt der Slowakei.<span class="more-text"> An der Donau.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/si.png"><h2>Ljubljana</h2><p class="country">Slowenien</p><p>Ljubljana ist die Hauptstadt Sloweniens.<span class="more-text"> Grüne Hauptstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/es.png"><h2>Madrid</h2><p class="country">Spanien</p><p>Madrid ist die Hauptstadt Spaniens.<span class="more-text"> Kunst und Königshaus.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/tr.png"><h2>Ankara</h2><p class="country">Türkei</p><p>Ankara ist die Hauptstadt der Türkei.<span class="more-text"> Politisches Zentrum.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/ua.png"><h2>Kiew</h2><p class="country">Ukraine</p><p>Kiew ist die Hauptstadt der Ukraine.<span class="more-text"> Historische Großstadt.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/hu.png"><h2>Budapest</h2><p class="country">Ungarn</p><p>Budapest ist die Hauptstadt Ungarns.<span class="more-text"> Donau und Thermalbäder.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/by.png"><h2>Minsk</h2><p class="country">Weißrussland</p><p>Minsk ist die Hauptstadt Weißrusslands.<span class="more-text"> Politisches Zentrum.</span></p></div>
+
+<div class="city"><img class="flag" src="https://flagcdn.com/w320/cy.png"><h2>Nikosia</h2><p class="country">Zypern</p><p>Nikosia ist die Hauptstadt Zyperns.<span class="more-text"> Geteilte Hauptstadt Europas.</span></p></div>
+
+</div>
+
+</body>
+</html>
