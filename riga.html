@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Riga - Hauptstadt Lettlands</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#2c3e50;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+    font-size:32px;
+}
+
+/* FACTS */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.fact{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.fact:hover{
+    transform:scale(1.05);
+}
+
+.fact h3{
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    background:#2c3e50;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#1c2833;
+    transform:scale(1.05);
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Riga</h1>
+    <p>Die Hauptstadt Lettlands</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Über Riga</h2>
+
+        <p>
+            Riga ist die Hauptstadt Lettlands und die größte Stadt des Baltikums.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt ist bekannt für ihre Jugendstilarchitektur und ihre Altstadt.
+        </p>
+
+        <br>
+
+        <p>
+            Riga liegt an der Ostsee und ist ein wichtiges Handelszentrum.
+        </p>
+
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Einwohner</h3>
+            <p>ca. 600.000</p>
+        </div>
+
+        <div class="fact">
+            <h3>Land</h3>
+            <p>Lettland</p>
+        </div>
+
+        <div class="fact">
+            <h3>Sprache</h3>
+            <p>Lettisch</p>
+        </div>
+
+        <div class="fact">
+            <h3>Besonderheit</h3>
+            <p>Jugendstil-Stadt</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="card">
+
+        <h2>Geschichte</h2>
+
+        <p>
+            Riga wurde im Mittelalter gegründet und war eine wichtige Hansestadt.
+        </p>
+
+        <br>
+
+        <p>
+            Sie wurde von verschiedenen Mächten geprägt, darunter Deutsche, Schweden und Russen.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Sehenswürdigkeiten</h2>
+
+        <ul>
+            <li>Altstadt Riga</li>
+            <li>Dom zu Riga</li>
+            <li>Schwarzhäupterhaus</li>
+            <li>Jugendstilviertel</li>
+            <li>Zentralmarkt</li>
+            <li>Freiheitsdenkmal</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Kultur und Alltag</h2>
+
+        <p>
+            Riga hat eine lebendige Kulturszene mit Musik und Festivals.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt ist modern, aber historisch geprägt.
+        </p>
+
+        <br>
+
+        <p>
+            Cafés und Märkte sind sehr beliebt.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Natur und Umgebung</h2>
+
+        <p>
+            Riga liegt nahe der Ostsee mit vielen Stränden in der Umgebung.
+        </p>
+
+        <br>
+
+        <p>
+            Wälder und Naturgebiete sind schnell erreichbar.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Bilder aus Riga</h2>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/500/300?random=191">
+
+            <img src="https://picsum.photos/500/300?random=192">
+
+            <img src="https://picsum.photos/500/300?random=193">
+
+            <img src="https://picsum.photos/500/300?random=194">
+
+            <img src="https://picsum.photos/500/300?random=195">
+
+            <img src="https://picsum.photos/500/300?random=196">
+
+        </div>
+
+    </div>
+
+    <a href="index.html" class="button">
+        ← Zurück zur Hauptseite
+    </a>
+
+</div>
+
+<footer>
+    Hauptstadt Europas Projekt • Riga
+</footer>
+
+</body>
+</html>
