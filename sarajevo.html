@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sarajevo - Hauptstadt Bosniens und Herzegowinas</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#2c3e50;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+    font-size:32px;
+}
+
+/* FACTS */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.fact{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.fact:hover{
+    transform:scale(1.05);
+}
+
+.fact h3{
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    background:#2c3e50;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#1c2833;
+    transform:scale(1.05);
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sarajevo</h1>
+    <p>Die Hauptstadt Bosniens und Herzegowinas</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Über Sarajevo</h2>
+
+        <p>
+            Sarajevo ist die Hauptstadt von Bosnien und Herzegowina
+            und liegt in einem Tal, umgeben von Bergen.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt gilt als kulturelles Zentrum des Landes
+            und verbindet verschiedene Religionen und Kulturen.
+        </p>
+
+        <br>
+
+        <p>
+            In Sarajevo stehen Moscheen, Kirchen und Synagogen
+            oft nur wenige Straßen voneinander entfernt.
+        </p>
+
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Einwohner</h3>
+            <p>ca. 300.000</p>
+        </div>
+
+        <div class="fact">
+            <h3>Land</h3>
+            <p>Bosnien und Herzegowina</p>
+        </div>
+
+        <div class="fact">
+            <h3>Sprache</h3>
+            <p>Bosnisch</p>
+        </div>
+
+        <div class="fact">
+            <h3>Besonderheit</h3>
+            <p>Kulturelle Vielfalt</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="card">
+
+        <h2>Geschichte</h2>
+
+        <p>
+            Sarajevo wurde stark vom Osmanischen Reich geprägt.
+            Viele historische Gebäude stammen aus dieser Zeit.
+        </p>
+
+        <br>
+
+        <p>
+            Im Jahr 1914 wurde hier der österreichische Thronfolger
+            Franz Ferdinand ermordet.
+        </p>
+
+        <br>
+
+        <p>
+            Dieses Ereignis führte zum Beginn des Ersten Weltkriegs.
+        </p>
+
+        <br>
+
+        <p>
+            In den 1990er Jahren wurde Sarajevo während des Bosnienkrieges
+            schwer beschädigt.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Sehenswürdigkeiten</h2>
+
+        <ul>
+            <li>Baščaršija Altstadt</li>
+            <li>Lateinerbrücke</li>
+            <li>Sebilj-Brunnen</li>
+            <li>Gelbe Festung</li>
+            <li>Gazi-Husrev-Beg-Moschee</li>
+            <li>Tunnelmuseum Sarajevo</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Natur und Klima</h2>
+
+        <p>
+            Sarajevo liegt zwischen hohen Bergen
+            und besitzt kalte Winter mit Schnee.
+        </p>
+
+        <br>
+
+        <p>
+            Die Umgebung eignet sich gut
+            für Wintersport und Wanderungen.
+        </p>
+
+        <br>
+
+        <p>
+            1984 fanden hier die Olympischen Winterspiele statt.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Kultur und Essen</h2>
+
+        <p>
+            Sarajevo besitzt eine einzigartige Mischung
+            aus orientalischer und europäischer Kultur.
+        </p>
+
+        <br>
+
+        <p>
+            Besonders beliebt sind bosnischer Kaffee,
+            Ćevapi und traditionelle Märkte.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt ist außerdem bekannt
+            für Musik, Filmfestivals und Gastfreundschaft.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Bilder aus Sarajevo</h2>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/500/300?random=41">
+
+            <img src="https://picsum.photos/500/300?random=42">
+
+            <img src="https://picsum.photos/500/300?random=43">
+
+            <img src="https://picsum.photos/500/300?random=44">
+
+            <img src="https://picsum.photos/500/300?random=45">
+
+            <img src="https://picsum.photos/500/300?random=46">
+
+        </div>
+
+    </div>
+
+    <a href="index.html" class="button">
+        ← Zurück zur Hauptseite
+    </a>
+
+</div>
+
+<footer>
+    Hauptstadt Europas Projekt • Sarajevo
+</footer>
+
+</body>
+</html>
