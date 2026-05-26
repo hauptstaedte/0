@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wien - Hauptstadt Österreichs</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#2c3e50;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+    font-size:32px;
+}
+
+/* FACTS */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.fact{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.fact:hover{
+    transform:scale(1.05);
+}
+
+.fact h3{
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    background:#2c3e50;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#1c2833;
+    transform:scale(1.05);
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Wien</h1>
+    <p>Die Hauptstadt Österreichs</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Über Wien</h2>
+
+        <p>
+            Wien ist die Hauptstadt und größte Stadt Österreichs.
+            Die Stadt liegt im Osten des Landes an der Donau
+            und gehört zu den bedeutendsten Kulturstädten Europas.
+        </p>
+
+        <br>
+
+        <p>
+            Wien ist weltweit bekannt für klassische Musik,
+            beeindruckende Architektur und historische Paläste.
+        </p>
+
+        <br>
+
+        <p>
+            Viele berühmte Komponisten wie Mozart,
+            Beethoven und Strauss lebten und arbeiteten in Wien.
+        </p>
+
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Einwohner</h3>
+            <p>ca. 2 Millionen</p>
+        </div>
+
+        <div class="fact">
+            <h3>Land</h3>
+            <p>Österreich</p>
+        </div>
+
+        <div class="fact">
+            <h3>Sprache</h3>
+            <p>Deutsch</p>
+        </div>
+
+        <div class="fact">
+            <h3>Fluss</h3>
+            <p>Donau</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="card">
+
+        <h2>Geschichte</h2>
+
+        <p>
+            Wien war über viele Jahrhunderte
+            die Hauptstadt des Habsburgerreiches.
+        </p>
+
+        <br>
+
+        <p>
+            Dadurch entstanden zahlreiche prachtvolle Gebäude,
+            Kirchen und Paläste.
+        </p>
+
+        <br>
+
+        <p>
+            Heute zählt die Altstadt von Wien
+            zum UNESCO-Weltkulturerbe.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Sehenswürdigkeiten</h2>
+
+        <ul>
+            <li>Schloss Schönbrunn</li>
+            <li>Stephansdom</li>
+            <li>Wiener Staatsoper</li>
+            <li>Prater mit Riesenrad</li>
+            <li>Hofburg</li>
+            <li>Belvedere</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Kultur und Musik</h2>
+
+        <p>
+            Wien gilt als Welthauptstadt der klassischen Musik.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt besitzt berühmte Opernhäuser,
+            Konzertsäle und Theater.
+        </p>
+
+        <br>
+
+        <p>
+            Außerdem ist Wien bekannt für seine Kaffeehäuser,
+            Sachertorte und traditionelle Wiener Küche.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Natur und Freizeit</h2>
+
+        <p>
+            Trotz ihrer Größe besitzt Wien viele Parks,
+            Grünflächen und Erholungsgebiete.
+        </p>
+
+        <br>
+
+        <p>
+            Besonders beliebt sind die Donauinsel
+            und der Wienerwald.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Bilder aus Wien</h2>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/500/300?random=21">
+
+            <img src="https://picsum.photos/500/300?random=22">
+
+            <img src="https://picsum.photos/500/300?random=23">
+
+            <img src="https://picsum.photos/500/300?random=24">
+
+            <img src="https://picsum.photos/500/300?random=25">
+
+            <img src="https://picsum.photos/500/300?random=26">
+
+        </div>
+
+    </div>
+
+    <a href="index.html" class="button">
+        ← Zurück zur Hauptseite
+    </a>
+
+</div>
+
+<footer>
+    Hauptstadt Europas Projekt • Wien
+</footer>
+
+</body>
+</html>
