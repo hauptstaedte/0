@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zagreb - Hauptstadt Kroatiens</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#2c3e50;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+    font-size:32px;
+}
+
+/* FACTS */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.fact{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.fact:hover{
+    transform:scale(1.05);
+}
+
+.fact h3{
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    background:#2c3e50;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#1c2833;
+    transform:scale(1.05);
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Zagreb</h1>
+    <p>Die Hauptstadt Kroatiens</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Über Zagreb</h2>
+
+        <p>
+            Zagreb ist die Hauptstadt und größte Stadt Kroatiens.
+            Sie liegt im Norden des Landes an den Südhängen des Medvednica-Gebirges.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt ist das politische, wirtschaftliche und kulturelle Zentrum Kroatiens.
+        </p>
+
+        <br>
+
+        <p>
+            Zagreb besteht aus einer historischen Oberstadt und einer modernen Unterstadt.
+        </p>
+
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Einwohner</h3>
+            <p>ca. 800.000</p>
+        </div>
+
+        <div class="fact">
+            <h3>Land</h3>
+            <p>Kroatien</p>
+        </div>
+
+        <div class="fact">
+            <h3>Sprache</h3>
+            <p>Kroatisch</p>
+        </div>
+
+        <div class="fact">
+            <h3>Besonderheit</h3>
+            <p>Ober- & Unterstadt</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="card">
+
+        <h2>Geschichte</h2>
+
+        <p>
+            Zagreb entstand aus zwei mittelalterlichen Siedlungen:
+            Kaptol und Gradec.
+        </p>
+
+        <br>
+
+        <p>
+            Diese wuchsen im Laufe der Zeit zusammen
+            und bildeten die heutige Stadt.
+        </p>
+
+        <br>
+
+        <p>
+            Heute ist Zagreb das Zentrum der kroatischen Politik
+            und Wirtschaft.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Sehenswürdigkeiten</h2>
+
+        <ul>
+            <li>Kathedrale von Zagreb</li>
+            <li>Markusplatz</li>
+            <li>Oberstadt (Gornji Grad)</li>
+            <li>Ban-Jelačić-Platz</li>
+            <li>Museum der zerbrochenen Beziehungen</li>
+            <li>Medvednica-Berg</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Natur und Freizeit</h2>
+
+        <p>
+            Zagreb bietet viele Parks, Wälder und Grünflächen.
+        </p>
+
+        <br>
+
+        <p>
+            Der nahe Medvednica-Naturpark ist ideal für Wanderungen.
+        </p>
+
+        <br>
+
+        <p>
+            Im Winter kann man dort sogar Ski fahren.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Kultur und Alltag</h2>
+
+        <p>
+            Zagreb besitzt viele Museen, Theater und Cafés.
+        </p>
+
+        <br>
+
+        <p>
+            Die Stadt ist bekannt für ihre entspannte Atmosphäre
+            und ihr historisches Stadtzentrum.
+        </p>
+
+        <br>
+
+        <p>
+            Besonders beliebt sind kroatische Gerichte wie Ćevapi und Strukli.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Bilder aus Zagreb</h2>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/500/300?random=61">
+
+            <img src="https://picsum.photos/500/300?random=62">
+
+            <img src="https://picsum.photos/500/300?random=63">
+
+            <img src="https://picsum.photos/500/300?random=64">
+
+            <img src="https://picsum.photos/500/300?random=65">
+
+            <img src="https://picsum.photos/500/300?random=66">
+
+        </div>
+
+    </div>
+
+    <a href="index.html" class="button">
+        ← Zurück zur Hauptseite
+    </a>
+
+</div>
+
+<footer>
+    Hauptstadt Europas Projekt • Zagreb
+</footer>
+
+</body>
+</html>
