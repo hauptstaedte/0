@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nikosia - Hauptstadt Zyperns</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#2c3e50;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+/* FACTS */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.fact{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.fact:hover{
+    transform:scale(1.05);
+}
+
+.fact h3{
+    margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* BUTTON */
+
+.button{
+    display:inline-block;
+    background:#2c3e50;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#1c2833;
+    transform:scale(1.05);
+}
+
+/* LIST */
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:700px){
+    header h1{font-size:42px;}
+    header p{font-size:18px;}
+    .card{padding:20px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nikosia</h1>
+    <p>Die Hauptstadt von Zypern</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Über Nikosia</h2>
+        <p>Nikosia ist die Hauptstadt von Zypern und die letzte geteilte Hauptstadt Europas.</p>
+        <br>
+        <p>Die Stadt liegt im Landesinneren der Insel und ist politisches sowie wirtschaftliches Zentrum.</p>
+        <br>
+        <p>Nikosia verbindet moderne Stadtteile mit historischen Altbauten.</p>
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Einwohner</h3>
+            <p>ca. 330.000</p>
+        </div>
+
+        <div class="fact">
+            <h3>Land</h3>
+            <p>Zypern</p>
+        </div>
+
+        <div class="fact">
+            <h3>Sprache</h3>
+            <p>Griechisch / Türkisch</p>
+        </div>
+
+        <div class="fact">
+            <h3>Besonderheit</h3>
+            <p>Geteilte Hauptstadt</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>Geschichte</h2>
+        <p>Nikosia hat eine über 1000-jährige Geschichte.</p>
+        <br>
+        <p>Seit 1974 ist die Stadt durch eine Grenze in zwei Teile geteilt.</p>
+    </div>
+
+    <div class="card">
+        <h2>Sehenswürdigkeiten</h2>
+        <ul>
+            <li>Ledra Street Grenzübergang</li>
+            <li>Famagusta Gate</li>
+            <li>Altstadt von Nikosia</li>
+            <li>Buyuk Han</li>
+            <li>Archäologisches Museum</li>
+            <li>Selimiye-Moschee</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Kultur und Alltag</h2>
+        <p>Nikosia ist kulturell vielfältig und stark von beiden Seiten der Insel geprägt.</p>
+        <br>
+        <p>Cafés, Märkte und historische Viertel prägen das Stadtbild.</p>
+        <br>
+        <p>Die Atmosphäre ist ruhig, aber politisch besonders interessant.</p>
+    </div>
+
+    <div class="card">
+        <h2>Natur und Umgebung</h2>
+        <p>Zypern bietet sonniges Klima und nahe Berge.</p>
+        <br>
+        <p>Die Küste ist in kurzer Zeit erreichbar.</p>
+    </div>
+
+    <div class="card">
+        <h2>Bilder aus Nikosia</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/500/300?random=411">
+            <img src="https://picsum.photos/500/300?random=412">
+            <img src="https://picsum.photos/500/300?random=413">
+            <img src="https://picsum.photos/500/300?random=414">
+            <img src="https://picsum.photos/500/300?random=415">
+            <img src="https://picsum.photos/500/300?random=416">
+        </div>
+    </div>
+
+    <a class="button" href="index.html">← Zurück zur Hauptseite</a>
+
+</div>
+
+<footer>
+    Hauptstadt Europas Projekt • Nikosia
+</footer>
+
+</body>
+</html>
